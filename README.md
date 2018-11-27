@@ -17,6 +17,8 @@ The second one is just betting on a predicted winner in all the matches - no lim
 The third can look weird, and it is, but its performance is not worse than others', so I left it among the godd strategies. The key point is it bets on a predicted winner only if odds are not less than 1.5, as the first one, but then, it uses a complex formula to count the bet (I won't write it here, but roughly the bet is higher if the odds on a predicted winner are higher and vice versa).
 The fourth one looks the most sensible - the bet is higher if the probability (given by the model) that the predicted winner would win the match is high and vice versa. And, I should say it really shows a stable good performance, even though the profit is not the highest.
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
 Let's now switch to features.
 36 different columns in Data excel tables are giving 20 features in the output. From the obvious ones, like ATP Ranking of the players, surface, winning percentage etc., to some constructed by me during the process, like elo ranking of the player (see Wikipedia for more details) which I consider as the great idea, aces and break points percentage, serve-winning percentage etc. As for such an amount of training set for each match, more features would probably kill the accuracy of the models. During the process also, some features were thrown away as insufficient and some were taken into consideration because of they improving the accuracy and profit relatively strongly.
 
